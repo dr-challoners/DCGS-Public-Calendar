@@ -30,6 +30,9 @@
 			eventRender: function(event, element) {
 				element.attr("location",event.location);
 				element.attr("description",event.description);
+				if (event.location) {
+					element.find('.fc-event-title').append( title + ' [' + event.location + ']' );
+				}
     			},
 			loading: function(bool) {
 				$('#loading').toggle(bool);

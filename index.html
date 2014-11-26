@@ -31,7 +31,7 @@
 				element.attr("location",event.location);
 				element.attr("description",event.description);
 				if (event.location) {
-					element.find('.fc-event-title').append( event.title + ' [' + event.location + ']' );
+					element.find('.fc-title').append( event.title + ' [' + event.location + ']' );
 				}
     			},
 			loading: function(bool) {

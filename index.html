@@ -28,9 +28,8 @@
 				return false;
 			},
 			eventRender: function(event, element) {
-        			element.qtip({
-            				content: event.description
-        			});
+				element.attr("location",event.location);
+				element.attr("description",event.description);
     			},
 			loading: function(bool) {
 				$('#loading').toggle(bool);

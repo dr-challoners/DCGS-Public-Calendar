@@ -27,7 +27,11 @@
 				window.open(event.url, 'gcalevent', 'width=700,height=600');
 				return false;
 			},
-			
+			eventRender: function(event, element) {
+        			element.qtip({
+            				content: event.location
+        			});
+    			},
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 			}
